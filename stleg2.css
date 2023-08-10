@@ -1,0 +1,103 @@
+@font-face {
+    font-family: "game1";
+    src: url(EightBitDragon-anqx.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: "game2";
+    src: url(MozartNbp-93Ey.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: "game3";
+    src: url(Pixeboy-z8XGD.ttf) format(truetype);
+}
+
+
+body {
+    display: flex;
+    position: relative;
+    margin: 0;
+    padding: 12px;
+    font-family: Arial, sans-serif;
+    background-image: url(bggamegif.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 210vh;
+}
+
+.container {
+    text-align: center;
+    margin: 100px auto;
+    max-width: 600px;
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: #a4b48c
+}
+
+
+
+.question > h1 {
+    font-family: "game3";
+    letter-spacing: 15px;
+    font-size: 80px;
+    margin-bottom: -30px;
+}
+
+.question > p {
+    font-family: "game2";
+    font-size: 30px;
+    margin-bottom: -10px;
+    border: 2px solid #095f54;
+    padding: 10px;
+    margin-left: 40px;
+    margin-right: 60px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    background-color: transparent;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.answer button {
+    font-family: "game3";
+    font-size: 20px;
+    padding: 10px 20px;
+    border: 2px solid #095f54;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #a4b48c;
+    cursor: pointer;
+}
+
+.answer input {
+    position: relative;
+    right: 5px;
+    font-family: "game3";
+    font-size: 23px;
+    text-align: center;
+    color: #a4b48c;
+    padding: 10px;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    width: 70%;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+input[type=text] {
+    background-color: transparent;
+    border-color: #095f54;
+}
+
+.answer input::placeholder,
+.answer textarea::placeholder {
+    color: rgb(131, 131, 131);
+}

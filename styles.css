@@ -1,0 +1,113 @@
+@font-face {
+    font-family: "pixel";
+    src: url(Pixeboy-z8XGD.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: "pixel2";
+    src: url(EightBitDragon-anqx.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: "pixel3";
+    src: url(MozartNbp-93Ey.ttf) format(truetype);
+}
+
+body {
+    background-image: url(bggif.gif);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    height: 75vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    text-align: center;
+    margin: 250px auto;
+    max-width: 600px;
+    color: rgb(255, 0, 234);
+    justify-content: center;
+    align-items: center;
+}
+
+.container > h1 {
+    font-family: "pixel2";
+    letter-spacing: 15px;
+    font-size: 55px;
+    position: relative;
+    top: 30px;
+    left: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.container > p {
+    font-family: "pixel3";
+    font-size: 25px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+input {
+    background-color: transparent;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-left: -5px;
+    color: rgb(0, 153, 255);
+    padding: 15px;
+    padding-right: 210px;
+    border-radius: 15px;
+}
+
+input[type="number"] {
+    margin-top: -105px;
+    border-color: rgb(0, 162, 255);
+    outline: none;
+    animation: blink 1s infinite;
+}
+
+input[type="number"]:hover {
+    animation: none; 
+    border-color: rgb(255, 0, 234); 
+}
+
+
+.input, button {
+    margin-top: -50px;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    height: 35px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+button[type="submit"] {
+    border-color: rgb(0, 162, 255);
+    outline: none;
+}
+
+button[type="submit"]:hover,
+button[type="submit"]:focus {
+    border-color: rgb(255, 0, 119);
+}
+
+p#message {
+    color: white;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
