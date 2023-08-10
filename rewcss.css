@@ -23,7 +23,9 @@ body {
 }
 
 .container > span {
+    position: relative;
     animation: glow 2s ease-in-out infinite;
+    top: 100px;
 }
 
 @keyframes glow {
@@ -69,4 +71,57 @@ body {
 }
 .container >span:nth-child(12) {
     animation-delay: 1.80s;
+}
+
+.pesan {
+    position: relative;
+    right: 45px;
+    bottom: 10px;
+    background: rgb(129, 129, 129);
+    padding: 10px;
+    border-radius: 15px;
+    width: 700px;
+    height: 300px;
+    clip-path: circle(1.5% at 90% 20%);
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+    margin: 20px 0px;
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.3);
+    text-align: justify;
+}
+
+.pesan:hover {
+    clip-path: circle(75%);
+    background: rgba(255, 255, 255, 0.2); /* Warna latar belakang dengan transparansi */
+    backdrop-filter: blur(5px);
+}
+
+.pesan h1 {
+    color: white;
+    margin: 0;
+    font-size: 15px;
+}
+
+.pesan p {
+    color: white;
+    font-size: 15px;
+}
+
+.pesan span {
+    font-size: 15px;
+    float: right;
+    color: white;
+    transition: color .5s;
+    position: relative;
+    margin-right: -7%;
+    margin-top: 4%;
+    padding: 5px;
+}
+
+.pesan:hover  span {
+    color: white;
+}
+
+.audio {
+    display: none;
 }
